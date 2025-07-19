@@ -14,13 +14,11 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 def user_input(user_question):
         embeddings = GoogleGenerativeAIEmbeddings(model = "models/embedding-001")
-        
         new_db = FAISS.load_local("faiss_index", embeddings,allow_dangerous_deserialization=True)
         docs = new_db.similarity_search(user_question)
 
         chain = process_pdf.get_conversational_chain()
 
-        
         response = chain(
             {"input_documents":docs, "question": user_question}
             , return_only_outputs=True)
@@ -39,7 +37,7 @@ def main():
         user_input(user_question)
 
     with st.sidebar:
-        
+
         st.title("📁 PDF File's Section")
         pdf_docs = st.file_uploader("Upload your PDF Files & \n Click on the Submit Button ", accept_multiple_files=True)
         if st.button("Submit"):
@@ -48,7 +46,6 @@ def main():
                 text_chunks = process_pdf.get_text_chunks(raw_text) # get the text chunks
                 process_pdf.get_vector_store(text_chunks) # create vector store
                 st.success("Done")
-        
 
 if __name__ == "__main__":
     main()
