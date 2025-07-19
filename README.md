@@ -1,5 +1,5 @@
 ## 📝 Overview
-**PDF Chat Agent** is a Streamlit-based web app that enables users to have interactive conversations with a chatbot trained on the contents of uploaded PDF documents. Users can upload multiple PDFs, extract the text, and chat in real time based on the extracted content.
+**PDF Chat Bot** is a Streamlit-based web app that enables users to have interactive conversations with a chatbot trained on the contents of uploaded PDF documents. Users can upload multiple PDFs, extract the text, and chat in real time based on the extracted content.
 
 ## 🎯 How It Works
 
@@ -27,12 +27,19 @@ The app follows these steps to respond to user queries:
 1. Install the dependencies:
    pip install -r requirements.txt
 
+## 📁 Project Structure
+
+pdf-chat-agent/
+│
+├── app.py # Main Streamlit app file
+├── config.py # Configuration settings and environment variables
+├── requirements.txt # Python dependencies
 
 ## 🖼️ Screenshot
 
 Here’s a preview of the application in action:
 
-![PDF Chat Agent Screenshot](chatbot_demo.png)
+![PDF Chat Bot Screenshot](chatbot_demo.png)
 
 ---
 
