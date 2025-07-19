@@ -24,7 +24,7 @@ The app follows these steps to respond to user queries:
 
 ## ▶️ Installation Steps
 
-1. Install the dependencies:
+Install the dependencies:
    pip install -r requirements.txt
 
 ## 🖼️ Screenshot
