@@ -29,7 +29,7 @@ def user_input(user_question):
 
 def main():
     st.set_page_config("PDF Q&A Chatbot", page_icon = ":scroll:")
-    st.header("PDF📚 - Chat BOt 🤖 ")
+    st.header("PDF📚 - Chat Bot 🤖 ")
 
     user_question = st.text_input("Ask Question from the PDF Files uploaded .. ✍️📝")
 
