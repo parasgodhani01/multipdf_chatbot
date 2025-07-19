@@ -27,14 +27,6 @@ The app follows these steps to respond to user queries:
 1. Install the dependencies:
    pip install -r requirements.txt
 
-## 📁 Project Structure
-
-pdf-chat-agent/
-│
-├── app.py # Main Streamlit app file
-├── config.py # Configuration settings and environment variables
-├── requirements.txt # Python dependencies
-
 ## 🖼️ Screenshot
 
 Here’s a preview of the application in action:
